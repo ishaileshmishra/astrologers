@@ -13,14 +13,14 @@ astroAppbar() {
   );
 }
 
-Padding _leadingIcon() {
-  return Padding(
-    padding: const EdgeInsets.all(10.0),
-    child: Image.asset(
-      'assets/profile.png',
-    ),
-  );
-}
+// Padding _leadingIcon() {
+//   return Padding(
+//     padding: const EdgeInsets.all(10.0),
+//     child: Image.asset(
+//       'assets/profile.png',
+//     ),
+//   );
+// }
 
 Padding _appbarTitle() {
   return Padding(
