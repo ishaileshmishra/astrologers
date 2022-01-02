@@ -16,7 +16,7 @@ class Astrologer extends GetView<AstroController> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: FocusScope.of(context).unfocus,
+      onTap: () => FocusScope.of(context).unfocus,
       child: Obx(
         () => Scaffold(
             appBar: controller.dataList.isEmpty ? null : astroAppbar(),

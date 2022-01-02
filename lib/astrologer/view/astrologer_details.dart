@@ -23,13 +23,8 @@ class AstroDetail extends GetView<AstroController> {
         child: ListView(
           shrinkWrap: true,
           children: [
-            Image.network(
-              dataModel.images.large.imageUrl,
-              width: double.infinity,
-              height: _deviceSize.height / 2,
-              fit: BoxFit.cover,
-            ),
-            detailpageMore(dataModel)
+            showImage(dataModel, _deviceSize),
+            detailpageMore(dataModel),
           ],
         ),
       ),
