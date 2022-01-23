@@ -1,8 +1,8 @@
-import 'package:astrologer/astrologer/controllers/controller_astrologer.dart';
-import 'package:astrologer/astrologer/widgets/appbar.dart';
-import 'package:astrologer/astrologer/widgets/list_tile.dart';
-import 'package:astrologer/astrologer/widgets/search_field.dart';
 import 'package:astrologer/constant.dart';
+import 'package:astrologer/view/astrologer/controllers/controller_astrologer.dart';
+import 'package:astrologer/view/astrologer/widgets/appbar.dart';
+import 'package:astrologer/view/astrologer/widgets/list_tile.dart';
+import 'package:astrologer/view/astrologer/widgets/search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -26,7 +26,7 @@ class Astrologer extends GetView<AstroController> {
                   ? const Center(
                       child: CircularProgressIndicator(
                       strokeWidth: 2,
-                      color: Colors.red,
+                      color: Colors.amber,
                     ))
                   : renderAstrologers(controller),
             )),
@@ -45,6 +45,7 @@ class Astrologer extends GetView<AstroController> {
         TextFormField(
             decoration: searchDeoration(error: null),
             controller: userInput,
+            keyboardType: TextInputType.text,
             onChanged: (value) {
               userInput.text = value.toString();
               debugPrint(value);

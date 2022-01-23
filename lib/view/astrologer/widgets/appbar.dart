@@ -1,6 +1,5 @@
+import 'package:astrologer/constant.dart';
 import 'package:flutter/material.dart';
-
-import '../../constant.dart';
 
 astroAppbar() {
   return AppBar(
@@ -26,7 +25,7 @@ Padding _appbarTitle() {
   return Padding(
     padding: const EdgeInsets.all(10.0),
     child: Image.asset(
-      'assets/logo.png',
+      appLogo,
       width: 60,
       height: 60,
     ),

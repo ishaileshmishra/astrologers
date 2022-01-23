@@ -1,4 +1,4 @@
-import 'package:astrologer/astrologer/models/models.dart';
+import 'package:astrologer/view/astrologer/view/astrologer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +12,7 @@ detailAppbar(String fullname) {
 
 Image showImage(dataModel, Size _deviceSize) {
   return Image.network(
-    dataModel.images.large.imageUrl,
+    '', //dataModel.images.large.imageUrl,
     width: double.infinity,
     height: _deviceSize.height / 2,
     fit: BoxFit.cover,

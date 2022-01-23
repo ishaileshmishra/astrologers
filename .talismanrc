@@ -1,0 +1,7 @@
+threshold: medium
+
+fileignoreconfig:
+  - filename: macos/Podfile.lock
+    checksum: 6679b61f8a43531722c71927c195efc7983a4f43c73b2d368b0422038ecf4e18
+  - filename: .dccache
+    checksum: 06142a189da4a0d93f734f94101f7db54cde7198578f332dcff2d700a85d9de0

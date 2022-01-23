@@ -1,14 +1,12 @@
-import 'package:astrologer/astrologer/view/astrologer.dart';
-import 'package:astrologer/astrologer/view/astrologer_details.dart';
+import 'package:astrologer/constant.dart';
+import 'package:astrologer/view/astrologer/view/astrologer.dart';
+import 'package:astrologer/view/astrologer/view/astrologer_details.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 
-import '../../constant.dart';
-
 ListTile buildListItemTile(BuildContext context, AstroModel _dataModel) {
-  //final AstroController controller = Get.put(AstroController()); // Or
   final AstroController controller = Get.find();
   return ListTile(
     onTap: () => Get.to(
@@ -46,15 +44,25 @@ Column _itemRenderSubtitle(AstroModel _dataModel, AstroController controller) {
   );
 }
 
-Align _callingBtn(AstroModel _dataModel) {
-  return Align(
-    alignment: Alignment.centerRight,
-    child: FloatingActionButton(
-      elevation: 0.0,
-      onPressed: () => debugPrint('${_dataModel.urlSlug} Clicked'),
-      child: const Icon(
-        Icons.phone,
-        color: Colors.white,
+_callingBtn(AstroModel _dataModel) {
+  return ElevatedButton.icon(
+    style: ButtonStyle(
+      backgroundColor: MaterialStateProperty.all<Color>(Colors.amber.shade800),
+    ),
+    onPressed: () => debugPrint('Clicked'),
+    icon: const Icon(
+      Icons.phone,
+      color: Colors.white,
+    ),
+    label: const SizedBox(
+      width: 80,
+      height: 40,
+      child: Align(
+        alignment: Alignment.center,
+        child: Text(
+          'Talk On Call',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     ),
   );

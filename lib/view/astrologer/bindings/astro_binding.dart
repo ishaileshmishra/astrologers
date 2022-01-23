@@ -1,4 +1,4 @@
-import 'package:astrologer/astrologer/controllers/controller_astrologer.dart';
+import '../controllers/controller_astrologer.dart';
 import 'package:get/instance_manager.dart';
 
 class AstroBinding implements Bindings {

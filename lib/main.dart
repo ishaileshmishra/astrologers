@@ -1,6 +1,6 @@
-import 'package:astrologer/astrologer/bindings/astro_binding.dart';
-import 'package:astrologer/astrologer/view/astrologer.dart';
-import 'package:astrologer/astrologer/view/unknown_route_page.dart';
+import 'package:astrologer/view/astrologer/bindings/astro_binding.dart';
+import 'package:astrologer/view/astrologer/view/astrologer.dart';
+import 'package:astrologer/view/astrologer/view/unknown_route_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get_storage/get_storage.dart';

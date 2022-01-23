@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:astrologer/astrologer/view/astrologer.dart';
+import 'package:astrologer/view/astrologer/view/astrologer.dart';
 import 'package:http/http.dart' as http;
 
 Future<AstrologerModel> getAstrologers() async {
