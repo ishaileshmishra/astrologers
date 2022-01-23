@@ -25,8 +25,8 @@ class Astrologer extends GetView<AstroController> {
               child: controller.dataList.isEmpty
                   ? const Center(
                       child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      color: Colors.amber,
+                      strokeWidth: 3,
+                      color: Colors.red,
                     ))
                   : renderAstrologers(controller),
             )),

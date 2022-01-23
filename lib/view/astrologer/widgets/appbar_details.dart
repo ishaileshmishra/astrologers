@@ -12,7 +12,7 @@ detailAppbar(String fullname) {
 
 Image showImage(dataModel, Size _deviceSize) {
   return Image.network(
-    '', //dataModel.images.large.imageUrl,
+    dataModel.images.large.imageUrl,
     width: double.infinity,
     height: _deviceSize.height / 2,
     fit: BoxFit.cover,
