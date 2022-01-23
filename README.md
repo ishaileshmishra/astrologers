@@ -9,7 +9,8 @@ This project is a starting point for a Flutter application.
 - Implement astrology functionality by using aajtak apis
 - Created List Page and Detail page
 
-![alt text](https://github.com/ishaileshmishra/astrologers/blob/main/assets/scns/scrnone.png?raw=true) ![alt text](https://github.com/ishaileshmishra/astrologers/blob/main/assets/scns/scrnone.png?raw=true)
+<img src="assets/scns/scrnone.png" width=250 height=430> 
+<img src="assets/scns/scrntwo.png" width=250 height=430>
 
 A few resources to get you started if this is your first Flutter project:
 
