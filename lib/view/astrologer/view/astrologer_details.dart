@@ -1,4 +1,6 @@
+import 'package:astrologer/responsive_widgets/resp_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
 import 'astrologer.dart';
@@ -18,6 +20,12 @@ class AstroDetail extends GetView<AstroController> {
 
     return Scaffold(
       appBar: detailAppbar(_fullname),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Get.back(),
+        isExtended: true,
+        child: const ResponsiveButton(),
+        tooltip: 'dismiss the page',
+      ),
       body: Container(
         padding: const EdgeInsets.all(0),
         child: ListView(

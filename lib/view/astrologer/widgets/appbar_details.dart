@@ -69,8 +69,6 @@ Padding detailpageMore(AstroModel dataModel) {
         _showRow('Free Minutes:', dataModel.freeMinutes.toString()),
         const SizedBox(height: 10),
         _showRow('Additional Minutes:', dataModel.additionalMinute.toString()),
-        const SizedBox(height: 20),
-        showDismissBtn(),
         const SizedBox(height: 30),
       ],
     ),
