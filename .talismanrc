@@ -1,7 +1,13 @@
 threshold: medium
 
 fileignoreconfig:
-  - filename: macos/Podfile.lock
-    checksum: 6679b61f8a43531722c71927c195efc7983a4f43c73b2d368b0422038ecf4e18
+  - filename: ios/Podfile.lock
+    checksum: 94325d6c6d3f10c893495b70160ff08e29b19cb53edb28bcf478f0a323ef44fb
   - filename: .dccache
     checksum: 06142a189da4a0d93f734f94101f7db54cde7198578f332dcff2d700a85d9de0
+  - filename: macos/Runner.xcodeproj/project.pbxproj
+    checksum: 32e6f5d505bf100766d536d393e4628a894d30e0467fa48514e40131eed7000a
+  - filename: lib/astrologer/view/astrologer.dart
+    checksum: a82ed03678b657240bcb254f5b0c7c129c727a75548e87f6855932b5ddd353b4
+  - filename: ios/Runner/Info.plist
+    checksum: 78f3eaef5f9d9fd9fc9b5c0e1125959194e26d7f9f50407744eddd327e9a1006
